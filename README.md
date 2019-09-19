@@ -34,6 +34,32 @@ echo "${sum}sum";
   :wq
 chmod 755 addormultiply.sh
 ./addormultiply.sh
+vim count2by.sh
+#!/usr/bin/bash 
+num1=$num1 
+num2=$num2 
+b=0 
+b=$b 
+counter=0 
+while [ "$1" -le num1 ]  
+do 
+   ((counter= $num2)); 
+echo "${counter}counter"; 
+ 
+elif [ -z "$2" ]; then 
+   echo $counter -le "$num1" 
+      ((counter++)); 
+elif [ $counter -gt $num1 ]; then 
+   echo "Counter: $counter times reached; Exiting loop"; 
+ 
+else 
+exit 
+done 
+chmod 755 count2by.sh
+count2by.sh 15 5
+line 9: syntax error near unexpected token `('
+line 9: `   ((counter= $num2));'
+
 # Part 3 of HMWK 3 "Generating a word cloud"
 ssh trgn.usc.edu
 pw for maiacorpuz@trgn.usc.edu
